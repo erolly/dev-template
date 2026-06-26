@@ -2,9 +2,11 @@ services:
   dev:
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: ../docker/php/Dockerfile
 
     volumes:
-      - ..:/workspace
+      - ./app:/workspace
 
     working_dir: /workspace
+
+    command: sleep infinity

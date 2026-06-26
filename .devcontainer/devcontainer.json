@@ -1,6 +1,19 @@
 {
-  "name": "Dev Template",
-  "dockerComposeFile": "docker-compose.yml",
+  "name": "PHP Workspace",
+  "dockerComposeFile": "../docker-compose.yml",
   "service": "dev",
-  "workspaceFolder": "/workspace"
+  "workspaceFolder": "/workspace",
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "bmewburn.vscode-intelephense-client",
+        "GitHub.copilot",
+        "GitHub.copilot-chat",
+        "eamodio.gitlens",
+        "usernamehw.errorlens",
+        "ms-azuretools.vscode-docker"
+      ]
+    }
+  }
 }
